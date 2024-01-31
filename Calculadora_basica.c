@@ -23,8 +23,13 @@ int main(){
     printf("%.5lf * %.5lf = %.5lf", &primer_numero, %segundo_numero, primer_numero * segundo_numero);
     break;
     case '/';
-    printf("%.5lf / %.5lf = %.5lf", &primer_numero, %segundo_numero, primer_numero / segundo_numero);
-    break;
+    if(segundo_numero !=0){
+       printf("%.5lf / %.5lf = %.5lf", &primer_numero, %segundo_numero, primer_numero / segundo_numero);
+    }
+      else{
+        printf("No puedo dividir entre 0");
+          }
+      return 1;
     default:
     printf("Operador externo al programa");
   }
