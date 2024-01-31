@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[]
-  )
+int main(int argc, char const *argv[])
   {
     int num;
     printf("Ingrese un entero: ");
