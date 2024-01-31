@@ -28,6 +28,7 @@ int main(){
     default:
     printf("Operador externo al programa");
   }
+  system("pause");
   return 0;
 }
 
