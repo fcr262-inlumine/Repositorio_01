@@ -9,22 +9,22 @@ int main(){
   char operador;
   printf("Que desea calcular: ");
   scan("%lf" "%lf", &primer_numero, &segundo_numero);
-  printf("Elija su operador (+,-,*,/): );
+  printf("Elija su operador (+,-,*,/):" );
   scan("%c", &operador);
 
   switch (operador){
-    case '+';
-    printf("%.5lf + %.5lf = %.5lf", &primer_numero, %segundo_numero, primer_numero + segundo_numero);
+    case '+':
+    printf("%.1lf + %.1lf = %.1lf", &primer_numero, &segundo_numero, primer_numero + segundo_numero);
     break;
-    case '-';
-    printf("%.5lf - %.5lf = %.5lf", &primer_numero, %segundo_numero, primer_numero - segundo_numero);
+    case '-':
+    printf("%.1lf - %.1lf = %.1lf", &primer_numero, &segundo_numero, primer_numero - segundo_numero);
     break;
-    case '*';
-    printf("%.5lf * %.5lf = %.5lf", &primer_numero, %segundo_numero, primer_numero * segundo_numero);
+    case '*':
+    printf("%.1lf * %.1lf = %.1lf", &primer_numero, &segundo_numero, primer_numero * segundo_numero);
     break;
-    case '/';
+    case '/':
     if(segundo_numero !=0){
-       printf("%.5lf / %.5lf = %.5lf", &primer_numero, %segundo_numero, primer_numero / segundo_numero);
+       printf("%.1lf / %.1lf = %.1lf", &primer_numero, &segundo_numero, primer_numero / segundo_numero);
     }
       else{
         printf("No puedo dividir entre 0");
