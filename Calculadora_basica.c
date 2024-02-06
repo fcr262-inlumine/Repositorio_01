@@ -1,41 +1,41 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
 int main(){
 	
-	double first_number, second_number;
-	char operator;
+	double n1, n2;
+	char operador;
+	
+	printf("Bienvenido a la calculadora =D ");
+	printf("\n");
+	printf("________________________________________________________________________________________________________________________");
+	printf("\n");
+	
+	printf("Ingrese operacion: ");	
+	scanf("%lf", &n1);
+	scanf(" %c", &operador);
+	scanf("%lf", &n2);
 	
 	
-	printf("Welcome to Calculator =D \n");
-	
-	printf("Enter first number: ");
-	scanf("%lf", &first_number);
-	
-	printf("Enter second number: ");
-	scanf("%lf", &second_number);
-	
-	printf("Enter operator (+,-,*,/): ");
-	scanf(" %c", &operator);
-	
-	switch (operator){
+	switch (operador){
 		case '+':
-			printf("%.5lf %.5lf = %.5lf", first_number, second_number, first_number + second_number);
+			printf("%.5lf + %.5lf = %.5lf", n1, n2, n1 + n2);
 		break;
 		case '-':
-			printf("%.5lf %.5lf = %.5lf", first_number, second_number, first_number - second_number);
+			printf("%.5lf - %.5lf = %.5lf", n1, n2, n1 - n2);
 		break;
 		case '*':
-			printf("%.5lf %.5lf = %.5lf", first_number, second_number, first_number * second_number);
+			printf("%.5lf * %.5lf = %.5lf", n1, n2, n1 * n2);
 		break;
 		case '/':
-			printf("%.5lf %.5lf = %.5lf", first_number, second_number, first_number / second_number);
+			printf("%.5lf / %.5lf = %.5lf\n", n1, n2, n1 / n2);
+			
+				if (n2 == 0){	
+				puts("I cant divide it");
+				}
 		break;
+			
 		default:
-			printf("!ERROR!");
+			printf("Invalid character");
 			
 	}
-	
+		
 	return 0;
 }
